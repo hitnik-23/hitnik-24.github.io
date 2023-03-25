@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Currículum Vitae</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background-color: darkkhaki;
+        }
+
+        h4 {
+            padding: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        div {
+            background-color: white;
+            border: 1px solid black;
+            padding: 12px;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 12px;
+        }
+
+        span {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+    <h1>Currículum Vitae</h1>
+
+    <img src="C:\Users\Educacion\Desktop\95.jpg" alt="mi foto de perfil">
+
+    <h4>DATOS PERSONALES</h4>
+        <ul>
+            <li>Vicente Cunningham</li>
+            <li>Fecha de nacimiento: 7/10/1961</li>
+            <li>DNI: 12670671               CUIL: 27-12670671-3</li>
+            <li>Tel. Celular: 3816754353</li>
+            <li>Domicilio: 2776 E Little York Rd</li>
+            <li>Dirección de mail: vincent.cunningham@example.com</li>
+        </ul>
+
+        <p>DISPONIBILIDAD HORARIA: Full-Time</p>
+<!--Datos como el localidad o código postal decidí omitirlos-->
+        <h4>FORMACIÓN ACADÉMICA</h4>
+            <p>Ingeniería Civil: Universidad Nacional de Tucumán. Cursado desde marzo 2019 a noviembre 2024</p>
+            <p>Curso inglés avanzado: Centro universitario de idiomas "CUI". Cursado desde marzo 2020 a novimbre 2020. Grado de honor conseguido.</p>
+
+        <h4>EXPERENCIAS LABORALES</h4>
+        <p>CONSRUCTORA "RONDON" S.R.L.-marzo 2025 a junio 2030</p>
+        <p>Puesto desempeñado: supervisor de obras</p>
+        <p>Teléfono de referencia: 3815787134</p>
+
+        <h4>HABILIDADES</h4>
+            <ul>
+                <li>responsabilidad y puntualidad</li>
+                <li>marcada orientación al cliente</li>
+                <li>capacidad de liderazgo y trabajo en equipo</li>
+                <li>inglés avanzado nivel C2</li>
+            </ul>
+
+        <p>Si están más interesados en averiguar mis tareas específicas y la historia de la empresa "RONDON" S.R.L.</p>
+        <button type="button" onclick="mostrartexto();">Leer más</button>
+
+        <span id="texto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget tortor ut libero facilisis vehicula in vitae justo. Curabitur non odio non ex iaculis tincidunt. Sed erat purus, convallis eget metus blandit, condimentum pretium augue. Maecenas scelerisque ultricies mi at tincidunt. Donec ac neque mollis, placerat elit sit amet, varius dolor. Proin vehicula tempus pharetra. Nunc vitae lorem augue. Aliquam erat volutpat. Sed ullamcorper urna eu elit sollicitudin, quis egestas purus feugiat. In egestas, metus at imperdiet facilisis, magna urna luctus lorem, condimentum lobortis libero urna a magna. Nulla facilisi. Nulla facilisi. Nulla facilisis fermentum quam, quis sodales odio congue a.</p>
+
+            <p>a lectus felis. Nullam ut mauris nec sapien tincidunt auctor fringilla id nisl. Vivamus arcu mi, pulvinar at cursus at, scelerisque eu orci. Curabitur condimentum vestibulum tortor eget venenatis. Aliquam cursus turpis risus, in rhoncus lacus tincidunt non. Proin enim dolor, euismod sit amet bibendum in, varius at magna. Nunc aliquet blandit rutrum.</p>
+        </span>
+    </div>
+
+<!--Tuve problemas para encontrar la ruta de mi hoja de Java, por eso directamente usé Java en la misma hoja de mi estructura de HTML-->
+    <script type="text/javascript">
+        function mostrartexto () {
+            document.getElementById('texto').style.display = 'block';
+        }
+
+    </script>
+
+</body>
+</html>
